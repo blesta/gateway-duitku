@@ -1,0 +1,20 @@
+<ul>
+    <li>
+        <?php
+        $this->Form->label($this->_('Duitku.merchant_key', true), 'merchant_key');
+        $this->Form->fieldText('merchant_key', ($meta['merchant_key'] ?? null), ['id'=>'merchant_key']);
+        ?>
+    </li>
+    <li>
+        <?php
+        $this->Form->label($this->_('Duitku.merchant_code', true), 'merchant_code');
+        $this->Form->fieldText('merchant_code', ($meta['merchant_code'] ?? null), ['id'=>'merchant_code']);
+        ?>
+    </li>
+    <li>
+        <?php
+        $this->Form->fieldCheckbox('sandbox', 'true', (($meta['sandbox'] ?? 'false') == 'true'), ['id'=>'sandbox']);
+        $this->Form->label($this->_('Duitku.sandbox', true), 'sandbox', ['class'=>'inline']);
+        ?>
+    </li>
+</ul>

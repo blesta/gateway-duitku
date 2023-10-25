@@ -1,0 +1,16 @@
+{
+    "name": "blesta/duitku",
+    "description": "Accept credit and debit cards, e-wallets, bank transfers, and send bulk payments via a single integration in Indonesia.",
+    "license": "proprietary",
+    "type": "blesta-gateway-nonmerchant",
+    "require": {
+        "blesta/composer-installer": "~1.0",
+        "duitkupg/duitku-php": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Phillips Data, Inc.",
+            "homepage": "http://blesta.com"
+        }
+    ]
+}

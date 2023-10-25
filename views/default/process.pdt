@@ -1,0 +1,9 @@
+
+	<?php
+    // Disable CSRF for this form
+    $this->Form->setCsrfOptions(['set_on_create' => false]);
+    $this->Form->create(($post_to ?? null));
+
+    $this->Form->fieldSubmit('submit', $this->_('Duitku.buildprocess.submit', true), ['class' => 'btn btn-info float-right']);
+
+    $this->Form->end();
