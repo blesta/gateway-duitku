@@ -323,7 +323,7 @@ class Duitku extends NonmerchantGateway
 
         return [
             'client_id' => ($transaction->merchantUserId ?? null),
-            'amount' => ($transaction->paymentAmount ?? null),
+            'amount' => ($transaction->amount ?? null),
             'currency' => 'IDR',
             'invoices' => $this->unserializeInvoices($transaction->additionalParam ?? ''),
             'status' => $status,
