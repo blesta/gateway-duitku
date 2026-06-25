@@ -1,5 +1,5 @@
 {
-    "version": "2.0.0",
+    "version": "2.0.1",
     "name": "Duitku.name",
     "description": "Duitku.description",
     "authors": [
@@ -11,5 +11,9 @@
     "currencies": [
         "IDR"
     ],
-    "signup_url": "https://dashboard.duitku.com/Account/Register"
+    "signup_url": "https://dashboard.duitku.com/Account/Register",
+    "logo": {
+        "light": "views/default/images/logo.svg",
+        "dark": "views/default/images/logo-dark.svg"
+    }
 }
